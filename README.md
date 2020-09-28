@@ -1,7 +1,7 @@
 # Skilaverkefni 3
 ## 1
 ### a
-leggja saman allar tölur í lista
+leggja saman allar tÃ¶lur Ã­ lista
 ### b
 Bubblesort
 ### c
@@ -11,19 +11,19 @@ Mergesort
 ### a
 ```python
 def fall(L):
-	\# setja upp lista meğ stak fyrir fyrir hverja tölu undir hæstu tölunni
-	hæsta = max(l)
-	countL = [0] * (hæsta+1)	
+	# setja upp lista meÃ° stak fyrir fyrir hverja tÃ¶lu undir hÃ¦stu tÃ¶lunni
+	hÃ¦sta = max(l)
+	countL = [0] * (hÃ¦sta+1)	
 	resultL = [0]*len(L)
-	\# telja şær tölur
+	# telja Ã¾Ã¦r tÃ¶lur
 	for i in L:
 		countL[i] += 1
-	\# finna hvağa index tölurnar eiga ağ fara í
+	# finna hvaÃ°a index tÃ¶lurnar eiga aÃ° fara Ã­
 	summa = 0
 	for i in range(len(countL)):
 		summma += countL[i]
 		countL[i] = summa
-	\# setja allar tölurnar á sinn stağ
+	# setja allar tÃ¶lurnar Ã¡ sinn staÃ°
 	for i in range(len(L)):
 		resultL[ CountL[L[i]]-1 ] = L[i]
 		countL[L[i]] - = 1
@@ -32,5 +32,5 @@ def fall(L):
 
 ```
 ### b
-Şetta er countingsort
+Ãetta er countingsort
 ### c
