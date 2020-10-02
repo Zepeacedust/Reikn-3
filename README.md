@@ -34,3 +34,4 @@ def fall(L):
 ### b
 Þetta er countingsort
 ### c
+þetta hefur o(n+k) þar sem n er lengdin á listanum og k er stærsta talan
