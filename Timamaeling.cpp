@@ -5,9 +5,9 @@ constexpr auto LENGTH = 1000000;
 
 
 /*
-	tími bubblesort = U.Þ.B Hálftími 
-	tími qsort = 490 ms
-	ég held að qsort sé að nota quicksort og er þá o(n * log(n))
+	tÃ­mi bubblesort = U.Ãž.B HÃ¡lftÃ­mi 
+	tÃ­mi qsort = 490 ms
+	Ã©g held aÃ° qsort sÃ© aÃ° nota quicksort og er Ã¾Ã¡ o(n * log(n))
 	bubblesort er o(n^2)
 */
 
@@ -24,7 +24,7 @@ void swap(int* a, int* b)
 	*b = c;
 }
 ///<summary>
-///sorta lista in place með bubblesort
+///sorta lista in place meÃ° bubblesort
 ///</summary>
 void inplaceBubblesort(int* arr, int length)
 {
@@ -47,7 +47,7 @@ int compare(const void* a, const void* b)
 	return (*(int*)a - *(int*)b);
 }
 
-/*int main()
+int main()
 {
 	int *numeros = new int[LENGTH];
 	steady_clock::time_point begin;
@@ -72,4 +72,4 @@ int compare(const void* a, const void* b)
 	end = steady_clock::now();
 	cout << "Time bubble sort = " << duration_cast<milliseconds>(end - begin).count() << "[ms]" << endl;
 
-}*/
+}
