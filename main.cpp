@@ -1,4 +1,5 @@
 #include <iostream>
+#include <math.h>
 using namespace std;
 
 ///Þetta reiknirit til að setja tölu inn í lista klárast í o(n) þar sem það þarf alltaf að skrifa upp annað array, það tekur samt o(log2(n)) tíma til að finna töluna
@@ -23,8 +24,7 @@ bool insert(int newNum, int** arr, int* length)
 	*length += 1;
 	int* arrHolder = *arr;
 	*arr = tempArray;
-	delete[*length] arrHolder;
-	cout << tempArray[0] << tempArray[1] << tempArray[2] << tempArray[3] << tempArray[4] << tempArray[5] << tempArray[6] << tempArray[7] << endl;
+	delete[] arrHolder;
 
 	return true;
 }
@@ -51,7 +51,7 @@ char* join(char* a, int aLen, char* b, int bLen)
 	{
 		a[i] = tempArray[i];
 	}
-	delete[joinLength] tempArray;
+	delete[] tempArray;
 	return a;
 }
 char* stafrof(char* texti, int lengd) 
