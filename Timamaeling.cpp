@@ -1,7 +1,7 @@
 #include <iostream>
 #include <chrono>
 
-constexpr auto LENGTH = 1000000;
+constexpr auto LENGTH = 100000;
 
 
 /*
